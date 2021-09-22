@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin:0 ;
+    padding: 0;
+    background-color: rgba(254, 255, 253, 0.7);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    background-position-x: center;
+}
+
+/* contenaire de formulaire */
+.boxsign{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px red solid ;
+    width: 45%; 
+    text-align: center;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+.boxsign:hover
+{
+    opacity: 1;
+    text-shadow: 10;
+    background: rgba(254, 255, 253, 0.7)
+}
+/* titre de formulaire */
+.boxsign h3{
+    color: red;
+    font-size: 45px;
+    letter-spacing: 5px;
+    left: 6px;
+}
+.contenu
+{
+    margin: 3%;
+}
+/* les entrees */
+input{
+    text-align: center;
+    width:auto;
+    border: transparent;
+    border-bottom: red solid 1px;
+    border-width: 1px;
+    background-color: transparent;
+    margin: 5px auto;
+    color: black;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+    width: 100%;
+    transition: 0.5s;
+}
+input:hover{
+    transition: 0.5s;
+    width: 100%;
+    transition: 0.5s;
+}
+/* select list */
+select
+{
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+button
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30% ;
+  margin-left: 35%;
+}
+button:hover
+{
+    transition: 0.1s;
+    border: 2px solid rgb(255, 0, 0) ;
+    border-radius: 5px;
+}

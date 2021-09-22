@@ -1,0 +1,82 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin:0 ;
+    padding: 0;
+    background-color: rgba(254, 255, 253, 0.7);
+    background-image: url(/image/fab2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+/* en tete de page */
+.head
+{
+    border-bottom:rgb(255, 0, 0) solid 2px ;
+    background: rgba(254, 255, 253, 0.7);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+/* config des deux logo de header */
+.images
+{
+    width: 85%;
+    image-rendering: auto;
+}
+/* config des deux images de header */
+.imguni{
+    height: 60px;
+}
+.imgfab{
+    height: 60px;
+}
+.logoAccInsloggedin
+{
+    width: 100px;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-top: 1.6%; 
+
+}
+/* padding betwen the two logos in the header */
+a
+{
+    padding-right: 10px;
+}
+.logoAccInsloggedout
+{
+    margin: auto;
+}
+/* footer */
+.foot{
+    border-top :rgb(255, 0, 0) solid 2px; 
+    background-color: rgb(174, 177, 170) ;
+    background-position: 30px ;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+}
+.foot a
+{
+    padding-right: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.sociallogo
+{
+    position: relative;
+        bottom: -20px;
+
+}
+.error
+{
+    color: red;  
+}

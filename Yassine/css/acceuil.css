@@ -1,0 +1,272 @@
+.homebody
+{
+  background-color: #faf4ef;
+  background-image: none;
+  font-family: sans-serif;
+}
+h1
+{
+  font-size: 80px;
+  letter-spacing: 5px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #000080;
+  padding-top: 30px;
+  cursor: pointer;
+}
+h1::after {
+  position: absolute;
+  margin-left: 43.8%;
+  content: "";
+  width: 12%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+h1:hover {
+  color: #95a5a6;
+}
+h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.presenting
+{
+  position: absolute;
+  width: 80%;
+  top:90px;
+  left: 10%;
+  height: max-content;
+  margin: auto;
+  border: rgb(87, 87, 240) solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.presenting img
+{
+  /* z-index: auto; */
+  width: 65%;
+  height: 500px;
+  image-rendering: auto;
+  margin-left: 17.5%;
+  border-radius: 8px;
+  opacity: 0.6;
+  transition: 0.5s;
+  margin-bottom:-40px ;
+}
+.presenting img:hover
+{
+  opacity: 1;
+  transition: 0.5s;
+  box-shadow: 3px 5px 10px rgb(59, 56, 56);
+  transform: scale(1);
+}
+.container {
+  position: relative;
+  font-family: Arial;
+  height: auto;
+}
+/* video styling */
+.vidcontainer
+{
+  position: fixed;
+  top:0;left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #1d1c1c ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+
+}
+.vidcontainer .close
+{
+  color: #ecf0f1;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.vidcontainer video
+{
+  width: 70%;
+  max-height: 800px;
+  transform: scale(0);
+  box-shadow: 0 10px 10px #5b8446;
+  outline: none;
+  transition: all 0.5s;
+}
+.vidcontainer.show
+{
+  pointer-events: all;
+  opacity: 1;
+}
+.vidcontainer.show video
+{
+  transform: scale(1);
+}
+.boxhead
+{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-block {
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  z-index: 2;
+  width:60% ;
+  background-color: #af67fc;
+  color: rgb(0, 0, 0);
+  height: auto;
+  /* top: 95%; */
+  border-radius: 8px;
+  transition: transform ease-in-out 0.3s;
+  left: 20%;
+}
+.text-block:hover
+{
+  box-shadow: 5px 5px 10px rgb(11, 12, 73);
+  transform: scale(1.02);
+  transition: 0.5s;
+  border: 2px rgb(187, 26, 32) solid ;
+}
+.text-block h2{
+  text-align: center;
+  padding-top: 2.5%;
+}
+.text-block p
+{
+  font-size: 20px;
+  padding: 20px;
+}
+
+/*  SECTIONS  */
+.ster {
+  /* position: relative; */
+	display: flex;
+  /* top: 200px; */
+  /* flex-direction: row; */
+	/* margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;*/
+  flex-wrap: nowrap;
+}
+
+/*  COLUMN SETUP  */
+.column {
+	/* float:left; */
+  width: 30%;
+  margin: 5%;
+  padding: 2%;
+  height: auto;
+  background-color: rgb(240, 145, 50);
+  border-radius: 8px;
+  border: 2px solid #000000 ;
+}
+.column:hover
+{
+  transform: scale(1.06);
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0px 5px #5757f0;
+}
+p
+{
+  font-family: 'PT Sans', sans-serif;
+}
+.player {
+  background: none;
+  width: 100px;
+  height: 100px;
+  border: solid 5px #fff;
+  border-radius: 100%;
+  position: absolute; 
+  top:27%;
+  left:46%;
+  text-indent:-9999px;
+ 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  z-index: 99;
+}
+
+.player span {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-left: 40px solid #fff;
+  border-bottom: 30px solid transparent;
+  position:absolute;
+  top:18%;
+  left:36%;    
+}
+
+.player:hover{
+  background:#9d47f6!important;
+  cursor:pointer;
+  opacity:0.6 !important;
+
+ 
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+ /* GROUPING 
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+
+
+ /* GRID OF THREE  
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+} */
